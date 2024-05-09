@@ -1,70 +1,4 @@
-body
-{
-    background:linear-gradient(to left,#05412c, #84cab1) ;
-    font-size: 20px;
-    font-family: 'Jersey 20', sans-serif;
-    font-weight: 400
-    
-}
-h1
-{
-    color:rgb(116, 39, 13);
-    font-size: 35px;
-    font-family: 'Playfair Display', sans-serif ;
-    font-weight: 700;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    
-}
-h2
-{
-color:rgb(83, 19, 5);
-font-size: 20px;
-font-family: Arial, Helvetica, sans-serif ;
-font-weight: 500;
-}
-#Search
-{
-    position: fixed;
-    top: 30px;
-    right: 10px;
-}
-#Connect li
-{
-    display: inline-block;
-    margin: 0px;
-    padding: 5px;
-}
-a:hover 
-{
-    color: rgb(169, 223, 20);
-}
-#Connect
-{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-    background-color: #f0f0f0;
-}
-#About, #Experience
-{
-    
-    padding: 50px;
-    border: 3px solid #ccc;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 50%;
-    background-color: rgb(80, 144, 184);
-    transition: transform 0.3s ease-in-out;
-}
-#About:hover, #Experience:hover
-{
-    transform: scale(1.1);
-    background-color: aquamarine;
-}
-
+/*
 .experience-list
 {
     list-style: none;
@@ -79,6 +13,134 @@ a:hover
     margin-bottom: 5px;
 }
 .responsibilities
+{
+    margin-top: 10px;
+}
+
+*/
+body
+{
+    background-color:#f9efe0;
+    font-size: 20px;
+}
+main
+{
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-right: 20px;
+    background-color: #ffffff;
+    position: relative;
+}
+nav
+{
+    display: flex;
+    position: sticky;
+    flex: 0.3;
+    padding: 20px;
+    margin-top: 200px;
+    flex-direction: column;
+}
+.page-content
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+article
+{
+    flex: 2;
+    padding: 20px;
+}
+.search-container
+{
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    z-index: 1000;
+}
+.search-input
+{
+    padding: 10px 30px 10px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+.search-button
+{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#name
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Playfair Display', sans-serif ;
+    font-weight: 700;
+}
+h1
+{
+    color:rgb(116, 39, 13);
+    font-size: 30px;  
+    font-family: 'Jersey 20', sans-serif;
+    
+}
+h2
+{
+    color:rgb(83, 19, 5);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: 500;
+}
+h2, h4
+{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+a
+{
+    text-decoration: none;
+    color: #4f5dba;
+}
+a:hover 
+{
+    text-decoration: underline;
+    color: purple;
+}
+#Connect
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.connect-title
+{
+    margin-top: 20px;
+}
+
+.social-icon
+{
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.social-icon i
+{
+    font-size: 20px;
+    color: #333;
+}
+
+#About
 {
     margin-top: 10px;
 }

@@ -4,6 +4,7 @@
         <title> My Website </title>
         <meta charset="UTF-8" />
         <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,62 +13,96 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     </head>
     <body>
-        <h1> Selam </h1>
-        <section id="Search"> 
-            <form action="/search" method="GET"> 
-                <input type="text" id="search" placeholder="Enter keyword" required pattern="[a-zA-Z0-9]">
-                <button type="submit"> Search </button> 
-            </form>
-        </section>
-        <section id="About"> 
-            <h2> About </h2>
-            <p> I thrive in dynamic environments where innovation is encouraged and collaboration is key. Whether it is staying abreast of the latest industry trends or diving deep into emerging technologies, I am always eager to expand my skill set and push the boundaries of what is possible in software development.  </p>
-            
-        </section>
         
-        <section id="Experience">
-            <h2> Experience </h2>
-            <ul class="experience-list">
-                <li> 
-                    <div class="experience-details">
-                        <h3> Software Developer </h3> 
-                    </div>
-                    <p class="responsibilities"> 
-                        - Developed and maintained web applications using HTML, CSS, JavaScript
-                    </p>
-                </li>
-                <li> 
-                    <div class="experience-details">
-                        <h3> Network Administrato </h3> 
-                    </div>
-                    <p class="responsibilities"> 
-                        - Designed, implemented and maintained network infrastructure
-                        <br>- Installed, configured and maintained network hardware and software
-                        <br>- Managed user accounts, permissions, and access controls 
-                    </p>
-                </li>
-                <li> 
-                    <div class="experience-details">
-                        <h3> IT Instructor </h3> 
+
+        <main>
+            <header>
+                <div class="search-container"> 
+                    <form action="/search" method="GET"> 
+                        <input type="text" id="search" class="search-input" placeholder="Search" required pattern="[a-zA-Z0-9]" >
+                        <button type="submit" class="search-button"><i class="fas fa-search"></i>  </button> 
+                    </form>
+                </div>
+            </header>
+            <nav>
+                <h4> Contents </h4>
+                    <div>
+                        <a href="#About"> About </a>
+                        <a href="#Experience"> Experience </a>
+                        <a href="#Skills"> Skills </a>
+                        <a href="#Projects"> Projects </a>
+                        <a href="#Connect"> Connect </a>
+                    </div>  
+            </nav>
+            <article>
+                <section id="name"> 
+                    <h1> Selam </h1> 
+                    <h5> Email: myemail@gmail.com
+                        <br>Phone: myphonenumber
+                        <br>Address: myaddress
+                    </h5>
+                </section>
+
+                <section id="About"> 
+                    <h2> About </h2>
+                    <p> I thrive in dynamic environments where innovation is encouraged and collaboration is key. Whether it is staying abreast of the latest industry trends or diving deep into emerging technologies, I am always eager to expand my skill set and push the boundaries of what is possible in software development.  </p>
+                </section>
+
+                <section id="Experience">
+                    <h2> Experience </h2>
+                    <ul class="experience-list">
+                        <li> 
+                            <div class="experience-details">
+                                <h3> Software Developer </h3> 
+                            </div>
+                            <p class="responsibilities"> 
+                                - Developed and maintained web applications using HTML, CSS, JavaScript
+                            </p>
+                        </li>
+                        <li> 
+                            <div class="experience-details">
+                                <h3> Network Administrator </h3> 
+                            </div>
+                            <p class="responsibilities"> 
+                                - Designed, implemented and maintained network infrastructure
+                                <br>- Installed, configured and maintained network hardware and software
+                                <br>- Managed user accounts, permissions, and access controls 
+                            </p>
+                        </li>
+                        <li> 
+                            <div class="experience-details">
+                                <h3> IT Instructor </h3> 
+                            </div> 
+                            <p class="responsibilities"> 
+                                - Designed and administered assessments, quizzes and exams
+                                <br>- Fascilitated hands-on labs, exercises and practical assignments to reinforce theoretical concepts and develop practical skills
+                                
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="Skills">
+                    <h2> Skills </h2>
+                </section>
+
+                <section id="Projects">
+                    <h2> Projects </h2>
+                </section>
+
+                <section id="Connect">
+                    <h2 class="connect-title"> Connect </h2>
+                    <div>
+                        <a href="#" class="social-icon"> <i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"> <i class="fab fa-facebook"> </i> </a>
+                        <a href="#" class="social-icon"> <i class="fab fa-twitter"> </i></a>
+                        <a href="#" class="social-icon"> <i class="fab fa-instagram"> </i> </a>
+                        <a href="#" class="social-icon"> <i class="fab fa-google"></i></a>
                     </div> 
-                    <p class="responsibilities"> 
-                        - Designed and administered assessments, quizzes and exams
-                        <br>- Fascilitated hands-on labs, exercises and practical assignments to reinforce theoretical concepts and develop practical skills
-                        
-                    </p>
-                </li>
-            </ul>
-        </section>
-    
-        <section id="Connect">
-            <h2> Connect </h2>
-            <ul>
-                <li> <a href="#" class="fab fa-linkedin">  </a> </li>
-                <li> <a href="#" class="fab fa-facebook">  </a> </li>
-                <li> <a href="#" class="fab fa-twitter">  </a> </li>
-                <li> <a href="#" class="fab fa-instagram">  </a> </li>
-                <li> <a href="#" class="fab fa-google">  </a> </li>
-            </ul>
-        </section>
+                </section>
+
+            </article>
+        </main>
+           
     </body>
 </html>
