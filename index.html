@@ -13,18 +13,20 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     </head>
     <body>
-        <header>
-            <div class="search-container"> 
-                <form action="/search" method="GET"> 
-                    <input type="text" id="search" class="search-input" placeholder="Search" required pattern="[a-zA-Z0-9]" >
-                    <button type="submit" class="search-button"><i class="fas fa-search"></i>  </button> 
-                </form>
-            </div>
-        </header>
+        
+
         <main>
+            <header>
+                <div class="search-container"> 
+                    <form action="/search" method="GET"> 
+                        <input type="text" id="search" class="search-input" placeholder="Search" required pattern="[a-zA-Z0-9]" >
+                        <button type="submit" class="search-button"><i class="fas fa-search"></i>  </button> 
+                    </form>
+                </div>
+            </header>
             <nav>
-                    <div class="page-content">
-                        <h4> Contents </h4>
+                <h4> Contents </h4>
+                    <div>
                         <a href="#About"> About </a>
                         <a href="#Experience"> Experience </a>
                         <a href="#Skills"> Skills </a>
@@ -48,49 +50,36 @@
 
                 <section id="Experience">
                     <h2> Experience </h2>
-                    <div class="experience">
-                        <div class="experience-details">
-                            <h3> Software Developer </h3>
-                            <div class="details">
-                                <p class="experience-location"> X Company, City, Country</p>
-                                <p class="experience-dates"> mm/dd/yyyy </p>
+                    <ul class="experience-list">
+                        <li> 
+                            <div class="experience-details">
+                                <h3> Software Developer </h3> 
                             </div>
-                            <p class="responsibilities">
+                            <p class="responsibilities"> 
                                 - Developed and maintained web applications using HTML, CSS, JavaScript
                             </p>
-     
-                        </div>
-                        <div class="experience-details">
-                            <h3> Network Administrator </h3>
-                            <div class="details">
-                            <p class="experience-location"> X Company, City, Country</p>
-                            <p class="experience-dates"> mm/dd/yyyy </p>
+                        </li>
+                        <li> 
+                            <div class="experience-details">
+                                <h3> Network Administrator </h3> 
                             </div>
                             <p class="responsibilities"> 
                                 - Designed, implemented and maintained network infrastructure
                                 <br>- Installed, configured and maintained network hardware and software
                                 <br>- Managed user accounts, permissions, and access controls 
                             </p>
-                        </div>
-                        <div class="experience-details">
-                            <h3> IT Instructor </h3>
-                            <div class="details">
-                            <p class="experience-location"> X Company, City, Country</p>
-                            <p class="experience-dates"> mm/dd/yyyy </p>
-                            </div>
+                        </li>
+                        <li> 
+                            <div class="experience-details">
+                                <h3> IT Instructor </h3> 
+                            </div> 
                             <p class="responsibilities"> 
                                 - Designed and administered assessments, quizzes and exams
-                                <br>- Fascilitated hands-on labs, exercises and practical assignments to reinforce theoretical concepts and develop practical skills   
+                                <br>- Fascilitated hands-on labs, exercises and practical assignments to reinforce theoretical concepts and develop practical skills
+                                
                             </p>
-                        </div>
-                        <div class="experience-details">
-                            <h3> System Administrator </h3>
-                            <div class="details">
-                            <p class="experience-location"> X Company, City, Country</p>
-                            <p class="experience-dates"> mm/dd/yyyy </p>
-                            </div>
-                        </div>   
-                    </div> 
+                        </li>
+                    </ul>
                 </section>
 
                 <section id="Skills">
@@ -114,9 +103,6 @@
 
             </article>
         </main>
-        <footer>
-
-        </footer>
            
     </body>
 </html>
