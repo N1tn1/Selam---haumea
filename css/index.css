@@ -163,6 +163,16 @@ footer
 {
 text-align: center;
 }
+#leaveMessage
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+}
+#messages
+{
+   padding: 0 40px;
+}
 /* Tablet styles */
 @media (min-width: 480px) and (max-width: 768px)
 {
