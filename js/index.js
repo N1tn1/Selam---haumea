@@ -77,4 +77,25 @@ function updateMessagesVisibility()
     {
         messageSection.style.display = 'block';
     }
-  }
+}
+const projectSection = document.getElementById('Projects');
+const projectList = projectSection.querySelector('ul');
+
+fetch('https://api.github.com/users/N1tn1/repos')
+.then(response => response.json())
+.then(repos => {
+    const repositories = repos;
+    for(let i = 0; i < repositories.length; i++)
+    {
+        const project = document.createElement('li');
+        project.textContent = repositories[i].name;
+        projectList.appendChild(project);
+
+    }
+})
+  .catch(error => console.error('Error fetching repositories:', error));
+    
+ 
+        
+    
+    
