@@ -11,28 +11,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jersey+20&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jacquard+12+Charted&family=Jersey+20&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-        </head>
+    </head>
     <body>
         <header>
-            <div class="search-container"> 
-                <form action="/search" method="GET"> 
-                    <input type="text" id="search" class="search-input" placeholder="Search" required pattern="[a-zA-Z0-9]" >
-                    <button type="submit" class="search-button"><i class="fas fa-search"></i>  </button> 
-                </form>
+            <div class="toggle-check">
+                <label class="switch">
+                    <input type="checkbox" id="toggle" onclick="toggleDarkMode()">
+                    <span class="slider round"></span>
+                </label>
             </div>
         </header>
         <main>
-            <nav>
-                    <div class="page-content">
-                        <h4> Contents </h4>
-                        <a href="#About"> About </a>
-                        <a href="#Experience"> Experience </a>
-                        <a href="#Skills"> Skills </a>
-                        <a href="#Projects"> Projects </a>
-                        <a href="#Connect"> Connect </a>
-                    </div>  
-            </nav>
+            <section id="nav-bar">
+                <nav id="nav-links">
+                    <a href="#About"> About </a>
+                    <a href="#Experience"> Experience </a>
+                    <a href="#Skills"> Skills </a>
+                    <a href="#Projects"> Projects </a>
+                    <a href="#Connect"> Connect </a>
+                    <a href="#leaveMessage"> Leave A Message </a>
+                </nav>     
+                <button id="hamburger-button">&#9776;</button> 
+            </section>
+
             <article>
+                
                 <section id="name"> 
                     <h1> Selam </h1> 
                     <h5> Email: myemail@gmail.com
@@ -59,7 +62,6 @@
                                 - Developed and maintained web applications using HTML, CSS, JavaScript
                                 <br>- Collaborated with frontend developers to ensure seamless integration of API endpoints with web and mobile applications
                             </p>
-     
                         </div>
                         <div class="experience-details">
                             <h3> Network Administrator </h3>
@@ -118,30 +120,25 @@
                         <a href="#" class="social-icon"> <i class="fab fa-google"></i></a>
                     </div> 
                 </section>
-
+                <section id="leaveMessage">
+                    <h2> Leave a Message </h2>
+                    <form name="leave_message">
+                        <div> <label> <input type="text" name="usersName" placeholder = "Enter Your Name" required="true"> </label> </div>
+                        <div> <label> <input type="email" name="usersEmail" placeholder = "Enter Your Email" required="true"> </label> </div>
+                        <div> <label> <textarea name="usersMessage" required="true"> </textarea> </label> </div>
+                        <div> <label> <button type="submit"> Submit </button> </label> </div>
+                    </form>
+                </section>  
+        
+                <section id="messages">
+                    <h2> Messages </h2>
+                    <ul>
+                    </ul>
+                </section> 
             </article>
         </main> 
-        <section id="leaveMessage">
-            <h2> Leave a Message </h2>
-            <form name="leave_message">
-                <div> <label> <input type="text" name="usersName" placeholder = "Enter Your Name" required="true"> </label> </div>
-                <div> <label> <input type="email" name="usersEmail" placeholder = "Enter Your Email" required="true"> </label> </div>
-                <div> <label> <textarea name="usersMessage" required="true"> </textarea> </label> </div>
-                <div> <label> <button type="submit"> Submit </button> </label> </div>
-            </form>
-        </section>  
+        
 
-        <section id="messages">
-            <h2> Messages </h2>
-            <ul>
-
-            </ul>
-
-        </section> 
-
-        <script src="js/index.js">
-
-            
-        </script>
+        <script src="js/index.js"></script>
     </body>
 </html>
